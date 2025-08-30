@@ -1,0 +1,228 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Taste Buds</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Restaurant Menu</title>
+  <style>
+    /* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  position: relative;
+}
+
+/* Background image with overlay */
+.background-overlay {
+  background-image: url('img/home.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/* Menu container */
+.menu-container {
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 30px;
+  color: #fff;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* Menu items */
+.menu-items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.menu-item {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  backdrop-filter: blur(5px);
+  transition: transform 0.3s;
+}
+
+.menu-item:hover {
+  transform: scale(1.05);
+}
+
+.menu-item img {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.menu-item h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #fffcfc;
+}
+
+.menu-item p {
+  font-size: 1em;
+  color: #ddd;
+}
+
+/* Button */
+button {
+  margin-top: 40px;
+  padding: 12px 30px;
+  font-size: 1em;
+  background-color: #7d483d;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #f8f5f4;
+  color: #7d483d;
+}
+ footer {
+      background-color: rgba(255, 255, 255, 0.1);
+      text-align: center;
+      padding: 1rem;
+      font-size: 1rem;
+      color: #fff;
+      border-top: 1px solid #f5b1b1;
+    }
+
+    footer span {
+      font-weight: bold;
+      color: #ffb5b5;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="background-overlay"></div>
+  <div class="menu-container">
+    <h1>🍽️ Our Food Menu</h1>
+    <div class="menu-items">
+      <div class="menu-item">
+        <img src="img/pizza1.jpg" alt="Pizza" />
+        <h3>Margherita Pizza</h3>
+        <p>Classic delight with mozzarella cheese & fresh basil.</p>
+         <button onclick="alert('Order placed!')">Order Now</button>
+      </div>
+      <div class="menu-item">
+        <img src="img/burger.jpg" alt="Burger" />
+        <h3>Cheese Burger</h3>
+        <p>Juicy beef patty with cheddar cheese & fresh veggies.</p>
+         <button onclick="alert('Order placed!')">Order Now</button>
+      </div>
+      <div class="menu-item">
+        <img src="img/dunut2.jpg" alt="Dunut" />
+        <h3>Donuts</h3>
+        <p>Juicy beef patty with cheddar cheese & fresh veggies.</p>
+         <button onclick="alert('Order placed!')">Order Now</button>
+      </div>
+      <div class="menu-item">
+        <img src="img/kadai.jpg" alt="kadai" />
+        <h3>Chicken kadai</h3>
+        <p>Juicy beef patty with cheddar cheese & fresh veggies.</p>
+       <button onclick="alert('Order placed!')">Order Now</button>
+      </div>
+      <div class="menu-item">
+        <img src="img/Oreao1.jpg" alt="Milk-shake" />
+        <h3>Oreo Milk-shake</h3>
+        <p> Thick and creamy. No one wants a watered-down milkshake. </p>
+      <button onclick="alert('Order placed!')">Order Now</button>
+      </div>
+      <div class="menu-item">
+        <img src="img/cake1.jpg" alt="cake" />
+        <h3>Choclate Cake</h3>
+        <p>My one-bowl silky smooth chocolate sauce recipe is rich and glossy. </p>
+      <button onclick="alert('Order placed!')">Order Now</button>
+      </div>
+      <div class="menu-item">
+        <img src="img/breakfast1.jpg" alt="Pasta" />
+      <h3>Creamy beard</h3>
+        <p>Rich creamy sauce with penne pasta & mushrooms.</p>
+       <button onclick="alert('Order placed!')">Order Now</button>
+      </div>
+      <div class="menu-item">
+        <img src="img/samosa.jpg" alt="pasta" />
+        <h3>Samosa's</h3>
+        <p>"Happiness Served in Crispy Wrappers!" "Wrap Your Heart Around a Samosa!</p>
+     <button onclick="alert('Order placed!')">Order Now</button>
+      </div><div class="menu-item">
+        <img src="img/dinner1.jpg" alt="BBQ" />
+        <h3>BBQ Spaicy</h3>
+        <p>Classic delight with mozzarella cheese & fresh basil.</p>
+      <button onclick="alert('Order placed!')">Order Now</button>
+      </div><div class="menu-item">
+        <img src="img/breakfast2.jpg" alt="Burger" />
+        <h3>Pen Cake</h3>
+        <p>Classic delight with mozzarella cheese & fresh basil.</p>
+      <button onclick="alert('Order placed!')">Order Now</button>
+      </div>
+      <div class="menu-item">
+        <img src="img/pasta2.jpg" alt="Pasta" />
+        <h3>Pasta</h3>
+        <p>Classic delight with mozzarella cheese & fresh basil.</p>
+         <button onclick="alert('Order placed!')">Order Now</button>
+      </div><div class="menu-item">
+        <img src="img/chickan_curry.jpg" alt="chickan_curry" />
+        <h3>Chickan_Curry</h3>
+        <p>Classic delight with mozzarella cheese & fresh basil.</p>
+       <button onclick="alert('Order placed!')">Order Now</button>
+      </div>
+    </div>
+    <button onclick="alert('Order placed!')">Order Now</button>
+  </div>
+   <footer>
+      &copy; 2025 <span>Taste Bubs</span> – Crafted with ❤️ for true food lovers.
+    </footer>
+
+  <script>
+    // Placeholder JavaScript for interaction
+console.log("Menu Page Loaded");
+
+document.querySelector("button").addEventListener("click", function () {
+  alert("Thanks for placing your order!");
+});
+
+  </script>
+</body>
+</html>
+
+</body>
+</html>

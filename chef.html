@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet Our Chef</title>
+    <style>
+        body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fefde6;
+    color: #333;
+}
+
+.chef-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.chef-section h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #894040;
+}
+
+.chef-card {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.chef-img {
+    width: 100%;
+    max-width: 300px;
+    object-fit: cover;
+    border-right: 1px solid #eee;
+}
+
+.chef-info {
+    padding: 20px;
+    flex: 1;
+    text-align: left;
+}
+
+.chef-info h2 {
+    color: #2c3e50;
+    margin-top: 0;
+}
+
+.chef-info p {
+    line-height: 1.6;
+}
+
+button {
+    background-color: #8c3333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    margin-top: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #fcfcfc;
+    border:1px solid #8c3333;
+    color: #8c3333;
+}
+
+#more-info {
+    max-width: 800px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 15px 20px;
+    border-left: 5px solid #e67e22;
+    display: none;
+    text-align: left;
+}
+
+.hidden {
+    display: none;
+}
+
+    </style>
+</head>
+<body>
+    <section class="chef-section">
+        <h1>Meet Our Chef</h1>
+        <div class="chef-card">
+            <img src="img/chef4.jpg" alt="Chef John Doe" class="chef-img">
+            <div class="chef-info">
+                <h2>Sana Malik</h2>
+                <p>With over 20 years of experience in French and Italian cuisine, Chef John brings creativity and passion to every dish. He believes in using the freshest ingredients and traditional techniques with a modern twist.</p>
+                <button onclick="showMore()">Know More</button>
+            </div>
+        </div>
+        <div id="more-info" class="hidden">
+            <p>Chef Sana Malik has worked in Michelin-starred restaurants and trained under world-renowned chefs. When he's not in the kitchen, he loves teaching young chefs and exploring new culinary trends.</p>
+        </div>
+        
+    </section>
+
+    <script>
+        function showMore() {
+    const info = document.getElementById("more-info");
+    if (info.style.display === "block") {
+        info.style.display = "none";
+    } else {
+        info.style.display = "block";
+    }
+}
+
+    </script>
+</body>
+</html>
